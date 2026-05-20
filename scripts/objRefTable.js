@@ -1,0 +1,70 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.TiledBg,
+		C3.Plugins.Sprite,
+		C3.Plugins.Mouse,
+		C3.Plugins.Text,
+		C3.Plugins.Touch,
+		C3.Plugins.System.Cnds.IsGroupActive,
+		C3.Plugins.System.Cnds.Every,
+		C3.Plugins.Sprite.Cnds.IsBoolInstanceVarSet,
+		C3.Plugins.Sprite.Acts.SetVisible,
+		C3.Plugins.System.Acts.Wait,
+		C3.Plugins.System.Exps.random,
+		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
+		C3.Plugins.Sprite.Acts.SetPos,
+		C3.Plugins.Sprite.Acts.SetHeight,
+		C3.Plugins.Sprite.Exps.Height,
+		C3.Plugins.Sprite.Acts.SetWidth,
+		C3.Plugins.Sprite.Exps.Width,
+		C3.Plugins.Sprite.Cnds.OnDestroyed,
+		C3.Plugins.System.Acts.CreateObject,
+		C3.Plugins.Sprite.Acts.MoveToBottom,
+		C3.Plugins.System.Cnds.EveryTick,
+		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.TiledBg.Acts.SetVisible,
+		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.Sprite.Cnds.CompareWidth,
+		C3.Plugins.Sprite.Cnds.CompareHeight,
+		C3.Plugins.System.Acts.RestartLayout,
+		C3.Plugins.System.Acts.ResetGlobals,
+		C3.Plugins.Mouse.Cnds.OnMovement,
+		C3.Plugins.Mouse.Exps.X,
+		C3.Plugins.Mouse.Exps.Y,
+		C3.Plugins.Mouse.Acts.SetCursor2,
+		C3.Plugins.Sprite.Cnds.IsOverlapping,
+		C3.Plugins.Mouse.Cnds.IsButtonDown,
+		C3.Plugins.System.Acts.AddVar,
+		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Plugins.Touch.Cnds.OnTapGestureObject,
+		C3.Plugins.Touch.Cnds.IsInTouch,
+		C3.Plugins.Touch.Exps.X,
+		C3.Plugins.Touch.Exps.Y
+	];
+};
+self.C3_JsPropNameTable = [
+	{PlanoDeFundoEmBlocos: 0},
+	{visivel: 0},
+	{destruido: 0},
+	{Sprite: 0},
+	{Sprite2: 0},
+	{Mouse: 0},
+	{Texto: 0},
+	{Toque: 0},
+	{PlanoDeFundoEmBlocos2: 0},
+	{pontos: 0},
+	{altura: 0},
+	{largura: 0}
+];
+
+self.InstanceType = {
+	PlanoDeFundoEmBlocos: class extends self.ITiledBackgroundInstance {},
+	Sprite: class extends self.ISpriteInstance {},
+	Sprite2: class extends self.ISpriteInstance {},
+	Mouse: class extends self.IInstance {},
+	Texto: class extends self.ITextInstance {},
+	Toque: class extends self.IInstance {},
+	PlanoDeFundoEmBlocos2: class extends self.ITiledBackgroundInstance {}
+}
